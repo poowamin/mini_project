@@ -1,0 +1,17 @@
+.about {
+  padding: 40px 100px;
+  height: 80vh;
+  background: #fff;
+  border-top: 1px solid #dde1f2;
+}
+
+.about h2 {
+  margin-bottom: 16px;
+  color: #2c3a7f;
+}
+
+.about p {
+  line-height: 1.7;
+  color: #4a4f63;
+  margin: 0 0 14px;
+}
