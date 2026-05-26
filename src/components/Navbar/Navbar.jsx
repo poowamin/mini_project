@@ -2,20 +2,16 @@ import React from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
-    <div className="navbar">
+    <div>
       <ul>
-        <li onClick={() => scrollToSection('home')}>Home</li>
-        <li onClick={() => scrollToSection('about')}>About</li>
-        <li onClick={() => scrollToSection('contact')}>Contact</li>
-        <li onClick={() => scrollToSection('note')}>Note</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Experience</li>
+        <li>Contact</li>
       </ul>
     </div>
   );
