@@ -5,11 +5,11 @@ import About from "./components/About/About";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Navbar />
       <main>
-        <Home />
-        <About />
+        {/* <Home />
+        <About /> */}
       </main>
     </div>
   );

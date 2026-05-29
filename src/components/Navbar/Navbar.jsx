@@ -2,18 +2,18 @@ import React from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-
   return (
-    <div>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Experience</li>
-        <li>Contact</li>
-      </ul>
-    </div>
+    <header className="header">
+      <a>My Portfolio</a>
+      <nav className="navbar">
+        <a>Home</a>
+        <a>About</a>
+        <a>Skills</a>
+        <a>Projects</a>
+        <a>Experience</a>
+        <a>Contact</a>
+      </nav>
+    </header>
   );
 };
 
