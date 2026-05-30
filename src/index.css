@@ -14,3 +14,7 @@
 body {
   background: url("./assets/Background_img.png") no-repeat center center fixed;
 }
+
+main {
+  margin-top: 80px;
+}
