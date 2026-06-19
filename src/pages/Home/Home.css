@@ -1,11 +1,21 @@
 p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #fff;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container {
+  height: 70vh;
+  background-color: #ced8ff;
+  padding: 2%;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 24px;
 }
