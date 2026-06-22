@@ -1,3 +1,6 @@
+/* ================================
+   HEADER STYLES
+   ================================ */
 .header {
   position: fixed;
   top: 0;
@@ -14,6 +17,22 @@
   font-weight: 500;
 }
 
+/* ================================
+   LOGO STYLES
+   ================================ */
+.logo {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 1em;
+}
+
+.logo:hover {
+  color: #7aa5ff;
+}
+
+/* ================================
+   NAVIGATION MENU
+   ================================ */
 .navbar {
   display: flex;
   gap: 40px;
@@ -21,4 +40,88 @@
   font-size: 18px;
   color: #fff;
   font-weight: 500;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-link:hover {
+  color: #7aa5ff;
+}
+
+/* Animated underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7aa5ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+/* Tablet Responsive (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .navbar {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile Responsive (max-width: 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 12px 3%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+
+  .navbar {
+    gap: 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: rgba(122, 165, 255, 0.1);
+    padding-bottom: 8px;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(122, 165, 255, 0.2);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
 }

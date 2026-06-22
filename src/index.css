@@ -1,3 +1,6 @@
+/* ================================
+   GLOBAL STYLES & RESET
+   ================================ */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +14,70 @@ body {
   min-height: 100vh;
 }
 
+/* ================================
+   MAIN LAYOUT
+   ================================ */
 main {
   margin-top: 80px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+/* ================================
+   CONTAINER STYLES
+   ================================ */
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+/* Mobile Responsive (max-width: 480px) */
+@media (max-width: 480px) {
+  main {
+    margin-top: 70px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+
+/* Tablet Responsive (481px to 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  section {
+    padding: 35px 20px;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 28px;
+  }
+}
+
+/* Large Desktop (1200px and above) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 40px;
+  }
 }

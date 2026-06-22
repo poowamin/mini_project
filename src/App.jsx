@@ -8,26 +8,33 @@ import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
 function App() {
-  /* const pageItems = [
-    { id: 1, title: "Home" },
-    { id: 2, title: "About" },
-    { id: 3, title: "Skills" },
-    { id: 4, title: "Projects" },
-    { id: 5, title: "Experience" },
-    { id: 6, title: "Contact" },
-  ]; */
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <div>
-      <Navbar />
+      <Navbar onNavClick={scrollToSection} />
       <main>
-        <Home />
-        <About />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
         <Skills />
-        <Projects />
-        <Experience />
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
       </main>
-      <footer>
+      <footer id="contact">
         <Contact />
       </footer>
     </div>
