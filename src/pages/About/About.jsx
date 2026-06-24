@@ -11,7 +11,7 @@ const About = () => {
             <h3 className="card-title">🎓 Education</h3>
             <div className="card-content">
               <p className="education-university">
-                <strong>University of Payao</strong>
+                <strong>University of Phayao</strong>
               </p>
               <p className="education-duration">2019 - 2023</p>
               <p className="education-degree">

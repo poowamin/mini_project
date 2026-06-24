@@ -16,7 +16,7 @@ const Skills = () => {
     {
       id: "tools",
       category: "Tools",
-      skills: ["Visual Studio Code", "Postman", "Git", "GitHub"],
+      skills: ["Postman", "Git", "GitHub"],
     },
     {
       id: "api",
@@ -26,7 +26,7 @@ const Skills = () => {
     {
       id: "soft-skills",
       category: "Soft Skills",
-      skills: ["Teamwork", "Patience", "Open-mindedness", "Adaptability"],
+      skills: ["Teamwork", "Fast Learner", "Open-mindedness", "Adaptability"],
     },
   ];
 
@@ -59,16 +59,16 @@ const Skills = () => {
               </ul>
             </div>
           ))}
-        </div>
-        <div
-          id="languages"
-          className="languages-card"
-          onClick={() => handleCategoryClick("languages")}
-        >
-          <h3 className="skill-category">Languages</h3>
-          <p className="language-text">
-            English - Professional working proficiency
-          </p>
+          <div
+            id="languages"
+            className="languages-card"
+            onClick={() => handleCategoryClick("languages")}
+          >
+            <h3 className="skill-category">Languages</h3>
+            <p className="language-text">
+              English - Professional working proficiency
+            </p>
+          </div>
         </div>
       </div>
     </section>
