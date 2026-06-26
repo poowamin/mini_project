@@ -26,7 +26,7 @@ li {
    SECTION LAYOUT
    ================================ */
 .experience-section {
-  padding: 80px 20px;
+  padding: 60px 18px;
 }
 
 .section-title {
@@ -157,7 +157,7 @@ li {
 /* Tablet Responsive (max-width: 768px) */
 @media (max-width: 768px) {
   .experience-section {
-    padding: 60px 15px;
+    padding: 50px 15px;
   }
 
   .section-title {
@@ -200,7 +200,7 @@ li {
 /* Mobile Responsive (max-width: 480px) */
 @media (max-width: 480px) {
   .experience-section {
-    padding: 40px 12px;
+    padding: 30px 12px;
   }
 
   .section-title {

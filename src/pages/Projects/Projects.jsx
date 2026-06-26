@@ -11,14 +11,14 @@ const Projects = () => {
       tags: ["React", "Vite", "CSS", "Web Development"],
       status: "In Progress",
     },
-    {
+/*     {
       id: 2,
       title: "Flutter Mobile Applications",
       description:
         "Developed multiple mobile features and components using Flutter during professional internship",
       tags: ["Flutter", "Mobile", "Dart"],
       status: "Completed",
-    },
+    }, */
   ];
 
   return (

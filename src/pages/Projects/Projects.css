@@ -16,7 +16,7 @@ h3 {
    SECTION LAYOUT
    ================================ */
 .projects-section {
-  padding: 80px 20px;
+  padding: 60px 18px;
 }
 
 .section-title {
@@ -148,7 +148,7 @@ h3 {
 /* Tablet Responsive (max-width: 768px) */
 @media (max-width: 768px) {
   .projects-section {
-    padding: 60px 15px;
+    padding: 50px 15px;
   }
 
   .section-title {
@@ -178,7 +178,7 @@ h3 {
 /* Mobile Responsive (max-width: 480px) */
 @media (max-width: 480px) {
   .projects-section {
-    padding: 40px 12px;
+    padding: 32px 12px;
   }
 
   .section-title {

@@ -2,7 +2,7 @@
    SECTION LAYOUT
    ================================ */
 .skills-section {
-  padding: 60px 20px;
+  padding: 55px 18px;
 }
 
 .skills-title {
@@ -148,7 +148,7 @@
 /* Tablet Responsive (max-width: 768px) */
 @media (max-width: 768px) {
   .skills-section {
-    padding: 50px 15px;
+    padding: 45px 15px;
   }
 
   .skills-title {
@@ -180,7 +180,7 @@
 /* Mobile Responsive (max-width: 480px) */
 @media (max-width: 480px) {
   .skills-section {
-    padding: 40px 12px;
+    padding: 32px 12px;
   }
 
   .skills-title {

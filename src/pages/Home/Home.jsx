@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <section id="home" className="home-section">
-      <div className="container">
+      <div className="home-container">
         <div className="home-content">
           <h1 className="home-title">Poowamin Klomkaing</h1>
           <p className="home-subtitle">Junior Frontend Developer</p>
@@ -15,10 +15,10 @@ const Home = () => {
             responsive UI development. Continuously building personal projects
             to strengthen frontend engineering skills.
           </p>
-          <div className="home-cta">
+          {/* <div className="home-cta">
             <button className="cta-button primary">View My Work</button>
             <button className="cta-button secondary">Get In Touch</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
