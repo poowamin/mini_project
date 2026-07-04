@@ -11,7 +11,7 @@ const Projects = () => {
       tags: ["React", "Vite", "CSS", "Web Development"],
       status: "In Progress",
     },
-/*     {
+    /*     {
       id: 2,
       title: "Flutter Mobile Applications",
       description:
@@ -22,30 +22,24 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section">
-      <div className="container">
-        <h2 className="section-title">My Projects</h2>
-        <p className="section-subtitle">
+    <section id="projects">
+      <div>
+        <h2>My Projects</h2>
+        <p>
           Actively building personal projects to strengthen practical
           development skills.
         </p>
-        <div className="projects-grid">
+        <div>
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-header">
-                <h3 className="project-title">{project.title}</h3>
-                <span
-                  className={`project-status ${project.status.toLowerCase().replace(" ", "-")}`}
-                >
-                  {project.status}
-                </span>
+            <div key={project.id}>
+              <div>
+                <h3>{project.title}</h3>
+                <span>{project.status}</span>
               </div>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tags">
+              <p>{project.description}</p>
+              <div>
                 {project.tags.map((tag, index) => (
-                  <span key={index} className="tag">
-                    {tag}
-                  </span>
+                  <span key={index}>{tag}</span>
                 ))}
               </div>
             </div>

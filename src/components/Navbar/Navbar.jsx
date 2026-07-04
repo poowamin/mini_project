@@ -18,13 +18,13 @@ const Navbar = ({ onNavClick }) => {
   };
 
   return (
-    <header className="header">
-      <a className="logo">My Portfolio</a>
-      <nav className="navbar">
+    <header>
+      <a className="customNav">My Portfolio</a>
+      <nav className="customNav">
         {navItems.map((item) => (
           <a
+            className="customNav"
             key={item.id}
-            className="nav-link"
             onClick={() => handleNavClick(item.id)}
           >
             {item.label}

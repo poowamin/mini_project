@@ -1,83 +1,68 @@
-/* ================================
-   GLOBAL STYLES & RESET
-   ================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }
 
 body {
-  background-color: #2b2b2b;
-  color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
   min-height: 100vh;
 }
 
-/* ================================
-   MAIN LAYOUT
-   ================================ */
-main {
-  margin-top: 70px;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
-section {
-  padding: 32px 18px;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* ================================
-   CONTAINER STYLES
-   ================================ */
-.container {
-  max-width: 1200px;
-  margin: 24px auto;
-  padding: 32px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(12px);
-}
-
-/* ================================
-   RESPONSIVE DESIGN
-   ================================ */
-
-/* Mobile Responsive (max-width: 480px) */
-@media (max-width: 480px) {
-  main {
-    margin-top: 65px;
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-
-  section {
-    padding: 24px 12px;
+  a:hover {
+    color: #747bff;
   }
-
-  .container {
-    max-width: 100%;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 16px;
-  }
-}
-
-/* Tablet Responsive (481px to 768px) */
-@media (max-width: 768px) and (min-width: 481px) {
-  section {
-    padding: 30px 18px;
-  }
-
-  .container {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 28px;
-  }
-}
-
-/* Large Desktop (1200px and above) */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    padding: 40px;
+  button {
+    background-color: #f9f9f9;
   }
 }
