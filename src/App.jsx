@@ -8,7 +8,6 @@ import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
 function App() {
-
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -20,21 +19,13 @@ function App() {
     <div>
       <Navbar onNavClick={scrollToSection} />
       <main>
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
+        <Home />
+        <About />
         <Skills />
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="experience">
-          <Experience />
-        </section>
+        <Projects />
+        <Experience />
       </main>
-      <footer id="contact">
+      <footer>
         <Contact />
       </footer>
     </div>
