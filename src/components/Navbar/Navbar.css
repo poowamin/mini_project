@@ -11,7 +11,7 @@ header {
   z-index: 1000;
 }
 
-.customNav {
+.custom-nav {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -24,12 +24,12 @@ header {
   transition: color 0.2s ease;
 }
 
-header .customNav:first-child {
+header .custom-nav:first-child {
   font-size: 1.05rem;
   font-weight: 700;
   color: #d7dae0;
 }
 
-.customNav:hover {
+.custom-nav:hover {
   color: #4a5365;
 }

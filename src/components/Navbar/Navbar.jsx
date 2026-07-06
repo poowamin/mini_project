@@ -19,11 +19,11 @@ const Navbar = ({ onNavClick }) => {
 
   return (
     <header>
-      <a className="customNav">My Portfolio</a>
-      <nav className="customNav">
+      <a className="custom-nav">My Portfolio</a>
+      <nav className="custom-nav">
         {navItems.map((item) => (
           <a
-            className="customNav"
+            className="custom-nav"
             key={item.id}
             onClick={() => handleNavClick(item.id)}
           >

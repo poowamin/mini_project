@@ -4,10 +4,10 @@ import "./About.css";
 const About = () => {
   return (
     <section id="about">
-      <div>
+      <div className="about-card">
         <h2>About Me</h2>
         <div>
-          <div>
+          <div className="custom-card">
             <h3>🎓 Education</h3>
             <div>
               <p>
@@ -18,7 +18,7 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div className="custom-card">
             <h3>📋 Contact Information</h3>
             <div>
               <p>
