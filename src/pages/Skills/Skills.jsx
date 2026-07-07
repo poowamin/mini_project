@@ -30,24 +30,20 @@ const Skills = () => {
     },
   ];
 
-  const handleCategoryClick = (id) => {
+  /*   const handleCategoryClick = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  };
+  }; */
 
   return (
     <section id="skills">
-      <div>
+      <div className="skills-card">
         <h2>Technical Skills</h2>
-        <div>
+        <div className="skills-grid">
           {skillCategories.map((item) => (
-            <div
-              key={item.id}
-              id={item.id}
-              onClick={() => handleCategoryClick(item.id)}
-            >
+            <div className="skills-container" key={item.id}>
               <h3>{item.category}</h3>
               <ul>
                 {item.skills.map((skill, skillIndex) => (
@@ -56,7 +52,7 @@ const Skills = () => {
               </ul>
             </div>
           ))}
-          <div id="languages" onClick={() => handleCategoryClick("languages")}>
+          <div className="skills-container" key="languages">
             <h3>Languages</h3>
             <p>English - Professional working proficiency</p>
           </div>

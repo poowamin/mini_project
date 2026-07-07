@@ -35,7 +35,7 @@
 
 .custom-card {
   flex: 1 1 280px;
-  width: 100%;
+  width: vw(50%);
   margin: 1rem 0;
   padding: 2rem;
   background: rgb(160, 205, 55);
