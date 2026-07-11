@@ -30,7 +30,7 @@ const Skills = () => {
     },
   ];
 
-  /*   const handleCategoryClick = (id) => {
+/*   const handleCategoryClick = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });

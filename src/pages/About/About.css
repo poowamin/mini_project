@@ -1,9 +1,12 @@
+#about {
+  padding: 4rem 1rem;
+}
+
 .about-card {
-  width: vw(100%);
-  margin: 2rem auto;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 2rem;
-  background: green;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
@@ -12,34 +15,37 @@
   margin: 0 0 0.75rem;
   font-size: 2.4rem;
   letter-spacing: -0.03em;
+  color: #111827;
 }
 
 .about-card h3 {
   margin: 0 0 0.75rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: -0.03em;
+  color: #111827;
 }
 
-#about {
-  padding: 4rem 1rem;
-}
-
-/* Make the immediate child container a flex row so justify-content works */
 .about-card > div {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .custom-card {
   flex: 1 1 280px;
-  width: vw(50%);
-  margin: 1rem 0;
-  padding: 2rem;
-  background: rgb(160, 205, 55);
+  width: 100%;
+  padding: 1.5rem;
+  background: #6d6d6d;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 24px;
+  border-radius: 18px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.custom-card p {
+  margin: 0 0 0.35rem;
+  color: #4b5563;
+  line-height: 1.7;
 }
