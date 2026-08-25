@@ -11,14 +11,15 @@ const Projects = () => {
       tags: ["React", "Vite", "CSS", "Web Development"],
       status: "In Progress",
     },
-    /*     {
+    {
       id: 2,
-      title: "Flutter Mobile Applications",
+      title: "Weather App",
       description:
-        "Developed multiple mobile features and components using Flutter during professional internship",
-      tags: ["Flutter", "Mobile", "Dart"],
+        "Developed State management and API integration using React, Vite, and CSS",
+      tags: ["React", "Vite", "CSS", "Web Development"],
       status: "Completed",
-    }, */
+      link: "https://weather-app-poowamin7.vercel.app/",
+    },
   ];
 
   return (
@@ -42,6 +43,11 @@ const Projects = () => {
                   <span key={index}>{tag}</span>
                 ))}
               </div>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  View project
+                </a>
+              )}
             </div>
           ))}
         </div>

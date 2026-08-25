@@ -8,14 +8,14 @@
   padding: 2rem;
   background: transparent;
   border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
 
 .skills-card h2 {
   margin: 0 0 0.75rem;
   font-size: 2.4rem;
   letter-spacing: -0.03em;
-  color: #111827;
+  color: var(--text);
 }
 
 .skills-grid {
@@ -29,26 +29,26 @@
   margin: 0 0 0.75rem;
   font-size: 1.4rem;
   letter-spacing: -0.03em;
-  color: #111827;
+  color: var(--text);
 }
 
 .skills-container {
   padding: 1.5rem;
-  background: #6d6d6d;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
 .skills-container ul {
   margin: 0;
   padding-left: 1.2rem;
-  color: #4b5563;
+  color: var(--muted);
   line-height: 1.7;
 }
 
 .skills-container p {
   margin: 0;
-  color: #4b5563;
+  color: var(--muted);
   line-height: 1.7;
 }
