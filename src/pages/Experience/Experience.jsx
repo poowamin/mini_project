@@ -19,22 +19,20 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="experience-section">
-      <div className="container">
-        <h2 className="section-title">My Experience</h2>
-        <div className="experience-timeline">
+    <section id="experience">
+      <div>
+        <h2>My Experience</h2>
+        <div>
           {experiences.map((exp) => (
-            <div key={exp.id} className="experience-card">
-              <div className="experience-header">
-                <h3 className="company-name">{exp.company}</h3>
-                <span className="duration">{exp.duration}</span>
+            <div key={exp.id}>
+              <div>
+                <h3>{exp.company}</h3>
+                <span>{exp.duration}</span>
               </div>
-              <p className="position">{exp.position}</p>
-              <ul className="responsibilities">
+              <p>{exp.position}</p>
+              <ul>
                 {exp.responsibilities.map((resp, index) => (
-                  <li key={index} className="responsibility-item">
-                    {resp}
-                  </li>
+                  <li key={index}>{resp}</li>
                 ))}
               </ul>
             </div>

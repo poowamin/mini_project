@@ -30,35 +30,32 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="contact-section">
-      <div className="container">
-        <h2 className="section-title">Contact Me</h2>
-        <p className="section-subtitle">
-          Feel free to reach out to me on any of these channels:
-        </p>
+    <div id="contact">
+      <div>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me on any of these channels:</p>
 
-        <div className="contact-grid">
+        <div>
           {contactInfo.map((contact, index) => (
-            <div key={index} className="contact-card">
-              <span className="contact-icon">{contact.icon}</span>
-              <h3 className="contact-label">{contact.label}</h3>
+            <div key={index}>
+              <span>{contact.icon}</span>
+              <h3>{contact.label}</h3>
               {contact.href ? (
                 <a
                   href={contact.href}
-                  className="contact-value"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {contact.value}
                 </a>
               ) : (
-                <p className="contact-value">{contact.value}</p>
+                <p>{contact.value}</p>
               )}
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

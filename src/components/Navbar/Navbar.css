@@ -1,127 +1,36 @@
-/* ================================
-   HEADER STYLES
-   ================================ */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  background-color: transparent;
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
+  padding: 24px 48px;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  background: rgba(24, 35, 47, 0.94);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* ================================
-   LOGO STYLES
-   ================================ */
-.logo {
-  cursor: pointer;
-  transition: color 0.3s ease;
-  font-size: 1em;
-}
-
-.logo:hover {
-  color: #7aa5ff;
-}
-
-/* ================================
-   NAVIGATION MENU
-   ================================ */
-.navbar {
+.custom-nav {
   display: flex;
-  gap: 40px;
-  position: relative;
-  font-size: 18px;
-  color: #fff;
+  align-items: center;
+  gap: 24px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
   font-weight: 500;
-}
-
-.nav-link {
+  letter-spacing: 0.02em;
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  padding-bottom: 5px;
+  transition: color 0.2s ease;
 }
 
-.nav-link:hover {
-  color: #7aa5ff;
+header .custom-nav:first-child {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
-/* Animated underline effect */
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #7aa5ff;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-/* ================================
-   RESPONSIVE DESIGN
-   ================================ */
-
-/* Tablet Responsive (max-width: 768px) */
-@media (max-width: 768px) {
-  .header {
-    padding: 15px 5%;
-    gap: 10px;
-  }
-
-  .navbar {
-    gap: 20px;
-    font-size: 14px;
-  }
-
-  .logo {
-    font-size: 0.9em;
-  }
-}
-
-/* Mobile Responsive (max-width: 480px) */
-@media (max-width: 480px) {
-  .header {
-    padding: 12px 3%;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .logo {
-    font-size: 0.8em;
-    margin-bottom: 5px;
-  }
-
-  .navbar {
-    gap: 12px;
-    font-size: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-link {
-    padding: 5px 8px;
-    border-radius: 4px;
-    background-color: rgba(122, 165, 255, 0.1);
-    padding-bottom: 8px;
-  }
-
-  .nav-link:hover {
-    background-color: rgba(122, 165, 255, 0.2);
-  }
-
-  .nav-link::after {
-    display: none;
-  }
+.custom-nav:hover {
+  color: var(--accent-strong);
 }
