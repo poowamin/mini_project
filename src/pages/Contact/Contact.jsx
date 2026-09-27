@@ -6,8 +6,8 @@ const Contact = () => {
     {
       icon: "📱",
       label: "Phone",
-      value: "+66 84 - 573 - 9901",
-      href: "tel:+66845739901",
+      value: "084-573-9901",
+      href: "tel:0845739901",
     },
     {
       icon: "✉️",

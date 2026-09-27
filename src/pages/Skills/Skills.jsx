@@ -6,27 +6,22 @@ const Skills = () => {
     {
       id: "frontend",
       category: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Vite"],
+      skills: ["HTML (Basic)", "CSS (Basic)", "JavaScript (Basic)", "React (Basic)"],
     },
     {
-      id: "mobile",
-      category: "Mobile",
-      skills: ["Flutter"],
+      id: "database",
+      category: "Database",
+      skills: ["SQL (Basic)"],
     },
     {
-      id: "tools",
-      category: "Tools",
-      skills: ["Postman", "Git", "GitHub"],
+      id: "development-tools",
+      category: "Development Tools",
+      skills: ["Dart (Flutter, Basic)", "Git / GitHub (Basic)"],
     },
     {
-      id: "api",
-      category: "API",
-      skills: ["REST API", "Fetched API"],
-    },
-    {
-      id: "soft-skills",
-      category: "Soft Skills",
-      skills: ["Teamwork", "Fast Learner", "Open-mindedness", "Adaptability"],
+      id: "testing",
+      category: "Other Skills",
+      skills: ["Debugging", "Application Testing"],
     },
   ];
 
@@ -54,7 +49,8 @@ const Skills = () => {
           ))}
           <div className="skills-container" key="languages">
             <h3>Languages</h3>
-            <p>English - Professional working proficiency</p>
+            <p>English (Basic)</p>
+            <p>Thai (Native)</p>
           </div>
         </div>
       </div>
