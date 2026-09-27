@@ -9,11 +9,13 @@ const Experience = () => {
       position: "Junior Mobile Developer (Flutter)",
       duration: "March - July 2023",
       responsibilities: [
-        "Developed mobile application features using Flutter in a team-based environment",
-        "Collaborated with designers and developers using Git for version control",
-        "Integrated REST APIs to fetch and display dynamic data",
-        "Implemented responsive UI components based on design requirements",
-        "Tested, debugged, and improved application performance and stability",
+        "Developed mobile application features using Flutter in a team-based environment.",
+        "Worked on a Dental Booking Application, including user registration and login, profile management, document upload, doctor availability, and appointment-related features.",
+        "Worked on a Time Attendance Application, including login, profile management, document upload, and clock-in / clock-out functionality.",
+        "Integrated REST APIs to retrieve and display application data.",
+        "Implemented UI components based on design and application requirements.",
+        "Tested application features, identified and debugged issues, and improved functionality and stability.",
+        "Collaborated with developers and designers using Git for version control.",
       ],
     },
   ];

@@ -19,7 +19,9 @@ const Navbar = ({ onNavClick }) => {
 
   return (
     <header>
-      <a className="custom-nav">My Portfolio</a>
+      <a className="custom-nav" href="#home" onClick={() => handleNavClick("home")}>
+        Poowamin Klomkaing
+      </a>
       <nav className="custom-nav">
         {navItems.map((item) => (
           <a

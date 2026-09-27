@@ -6,13 +6,13 @@ const Home = () => {
     <section id="home">
       <div className="home-card">
         <h1>Poowamin Klomkaing</h1>
-        <p className="home-role">Junior Frontend Developer</p>
+        <p className="home-role">Software Developer | Junior / Entry Level</p>
         <p>
-          Frontend Developer with hands-on experience in Flutter and a strong
-          interest in modern web development using React, Vite, and Tailwind
-          CSS. Familiar with REST API integration, Git workflows, and responsive
-          UI development. Continuously building personal projects to strengthen
-          frontend engineering skills.
+          Computer Engineering graduate from the University of Phayao with
+          experience in mobile application development using Flutter. Previously
+          worked as a Junior Mobile Developer with experience in REST API
+          integration. Seeking a Software Developer position to apply existing
+          skills and continue developing through real-world experience.
         </p>
       </div>
     </section>

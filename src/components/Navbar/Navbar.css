@@ -2,11 +2,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 48px;
-  background: transparent;
-  backdrop-filter: blur(8px);
-  background: rgba(24, 35, 47, 0.94);
-  border-bottom: 1px solid var(--border);
+  gap: 2rem;
+  padding: 1.1rem clamp(1.25rem, 5vw, 5rem);
+  background: rgba(11, 15, 27, 0.78);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -15,22 +15,44 @@ header {
 .custom-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
-  color: var(--muted);
+  gap: clamp(0.85rem, 2vw, 1.7rem);
+  color: #9ca8c4;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 header .custom-nav:first-child {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text);
+  margin-right: auto;
+  color: #f5f7ff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: none;
 }
 
 .custom-nav:hover {
-  color: var(--accent-strong);
+  color: #f3a96b;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  header .custom-nav:first-child {
+    margin-right: 0;
+  }
+
+  header nav.custom-nav {
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+  }
 }
