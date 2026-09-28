@@ -20,6 +20,15 @@ const Projects = () => {
       status: "Completed",
       link: "https://weather-app-poowamin7.vercel.app/",
     },
+    {
+      id: 3,
+      title: "Journal App",
+      description:
+        "Developed a Journal App using React, Vite, Tailwind CSS for managing personal notes and entries",
+      tags: ["React", "Vite", "Tailwind CSS", "Web Development", "Firebase"],
+      status: "In Progress",
+      link: "",
+    },
   ];
 
   return (
