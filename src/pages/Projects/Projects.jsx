@@ -27,7 +27,7 @@ const Projects = () => {
         "Developed a Journal App using React, Vite, Tailwind CSS for managing personal notes and entries",
       tags: ["React", "Vite", "Tailwind CSS", "Web Development", "Firebase"],
       status: "In Progress",
-      link: "",
+      link: "https://github.com/poowamin/journey-app-test",
     },
   ];
 
